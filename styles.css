@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap');
+
+body {
+  --font: "Barlow";
+  --bege: #E6E0D6;
+  --marrom-escuro: #816D4F;
+  --marrom-claro: #B29463;
+  --cinza-escuro: #212529;
+  height: 2500px;
+}
+
+.offcanvas-title img {
+    width: 120px;
+    height: 120px;
+}
+
+.banner-1 {
+    background-image: url(./img/banner.jpg);
+}
+.banner-2 {
+    background-image: url(./img/banner2.png);
+}
+.banner-3 {
+    background-image: url();
+}
+
+.banners {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: 1.1em;
+    color: var(--cinza-escuro);
+}
+
+.banners-titulo {
+    --bs-bg-opacity: 0.4;
+}
+
+.botao-padrao {
+    background-color: var(--marrom-claro);
+    color: black;
+}
+
+.botao-padrao:hover {
+    background-color: var(--marrom-escuro);
+}
+
+input[type=range]::-webkit-slider-thumb{
+    background-color: var(--marrom-claro);
+}
+
+footer {
+    background-color: var(--marrom-claro);
+    color: var(--cinza-escuro);
+}
