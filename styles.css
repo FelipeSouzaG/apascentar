@@ -6,6 +6,8 @@ body {
   --marrom-escuro: #816D4F;
   --marrom-claro: #B29463;
   --cinza-escuro: #212529;
+  --cinza-claro: #9C9D9F;
+  --preto: #000000;
   height: 2500px;
 }
 
@@ -32,7 +34,8 @@ body {
     background-position: center;
     background-attachment: fixed;
     font-size: 1.1em;
-    color: var(--cinza-escuro);
+    font-weight: 600;
+    color: var(--preto);
 }
 
 .banners-titulo {
@@ -55,4 +58,8 @@ input[type=range]::-webkit-slider-thumb{
 footer {
     background-color: var(--marrom-claro);
     color: var(--cinza-escuro);
+}
+
+.music img{
+    width: 1.5em;
 }
