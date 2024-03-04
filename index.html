@@ -14,12 +14,19 @@
         <header>
             <nav class="navbar navbar-dark bg-dark fixed-top">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand">
                         Célula Apascentar
                     </a>
+
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label music" for="flexSwitchCheckDefault"><img src="./img/music-off.png"></label>
+                    </div>
+                    
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+
                     <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                         <div class="offcanvas-header">
                                 <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
@@ -52,7 +59,7 @@
                   <p>Caminhamos juntos como familia para ajudar um ao outro na fé.</p>
                 </div>
             </section>
-
+ 
             <section class="py-5">
                 <h2 class="text-center fw-bold pb-1">Nosso alvo são os filhos da Paz</h2>
         
@@ -72,16 +79,16 @@
                     <div class="card m-4" style="width: 20rem;">
                         <img src="./assets/buffet-card.png" class="card-img-top" alt="">
                         <div class="card-body">
-                            <h5 class="card-title py-2 fw-bold">Salvação ou Acusação?</h5>
+                            <h5 class="card-title py-2 fw-bold">Exortação ou Acusação?</h5>
                             <p class="card-text">
-                                Cremos na salvação e libertação proporcionada pela vida de Jesus! Ele nos reconciliou com Deus.
+                                Cremos na salvação e libertação proporcionada pela obra de Jesus! Ele nos reconciliou com Deus.
                             </p>
                             <a href="#" class="btn botao-padrao w-100 fw-bold mt-3" data-bs-toggle="offcanvas" data-bs-target="#canvas-2" aria-controls="offcanvasRight">+ detalhes</a>
                         </div>
                     </div>
-        
+
                     <div class="card m-4" style="width: 20rem;">
-                        <img src="./assets/delivery-card.png" class="card-img-top" alt="">
+                        <img src="./assets/buffet-card.png" class="card-img-top" alt="">
                         <div class="card-body">
                             <h5 class="card-title py-2 fw-bold">Transformados por Ele</h5>
                             <p class="card-text">
@@ -90,8 +97,9 @@
                             <a href="#" class="btn botao-padrao w-100 fw-bold mt-3" data-bs-toggle="offcanvas" data-bs-target="#canvas-3" aria-controls="offcanvasRight">+ detalhes</a>
                         </div>
                     </div>
+
                 </div>
-              </section>
+            </section>
 
             <section class="banners banner-2 d-flex flex-column justify-content-center text-center">
                 <div class="banners-titulo bg-body-secondary py-5">
@@ -104,6 +112,49 @@
                 </div>
             </section>
 
+
+            <section class="d-flex flex-column justify-content-center text-center align-items-center py-5">
+                <div class="car">
+                    <h3 class="fw-bold py-3">Nossos momentos de comunhão</h3>
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/carrossel_1.jpg" class="d-block w-100" alt="...">
+                                <p class="fw-bold py-4">Momento da célula</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/carrossel_2.jpg" class="d-block w-100" alt="...">
+                                <p class="fw-bold py-4">Confraternização</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/carrossel_3.jpg" class="d-block w-100" alt="...">
+                                <p class="fw-bold py-4">Encontro de mulheres</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/carrossel_4.jpg" class="d-block w-100" alt="...">
+                                <p class="fw-bold py-4">Célula kids</p>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div> 
+                </div>
+            </section>
+
+
+
             <section class="py-4 container">
                 <div class="border border-2 rounded p-3">
                     <div class="rol col-10 mx-auto">
@@ -111,26 +162,37 @@
                             <h3 class="fw-bold p-3">Gostaria de nos conhecer?</h3>
                             <form id="contato">
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="nome" placeholder="Nome">
+                                    <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome">
                                     <label for="nome">Nome</label>
                                 </div>
 
                                 <div class="form-floating mb-3">
-                                    <textarea class="form-control" id="endereco" rows="3" placeholder="Endereço"></textarea>
-                                    <label for="endereco">Endereço</label>
+                                    <textarea class="form-control" id="endereco" name="endereco" rows="3" placeholder="Endereço"></textarea>
+                                    <label for="endereco">Endereço completo</label>
                                 </div>
                             
                                 <div class="form-floating mb-3">
-                                    <input type="phone" class="form-control" id="telefone" placeholder="Telefone">
-                                    <label for="telefone">Telefone</label>
+                                    <input type="phone" class="form-control" id="telefone" name="telefone" maxlength="15" placeholder="Telefone">
+                                    <label for="telefone">Telefone (xx) xxxxx-xxxx</label>
                                 </div>
 
                                 <div class="form-floating mb-3">
-                                    <textarea class="form-control" id="sentimento" rows="3" placeholder="Como você está?"></textarea>
+                                    <textarea class="form-control" id="sentimento" rows="3" name="sentimento" placeholder="Como você está?"></textarea>
                                     <label for="sentimento">Como você está?</label>
                                 </div>
+
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" id="visita" name="visita" type="checkbox">
+                                    <label class="form-check-label" for="visita">
+                                      Gostaria de receber uma visita?
+                                    </label>
+                                </div>
                                 
-                                <button type="button" class="btn botao-padrao w-100 fw-bold mt-3 py-3">Enviar</button>
+                                <div class="card-body" data-bs-toggle="modal" data-bs-target="#send">
+                                    <button type="submit" class="fel-1 btn botao-padrao w-100 fw-bold mt-3 py-3" id="fel">
+                                      Enviar
+                                    </button> 
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -147,97 +209,237 @@
         </footer>
 
         <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-1" aria-labelledby="offcanvasRightLabel">
+
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasRightLabel">A paz do Senhor Irmão!!!</h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
+
             <div class="offcanvas-body">
-                <div class="accordion" id="accordionExample">
+                <div class="accordion" id="accordion1">
+
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button botao-padrao" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Lucas 10:5-6
+                            <button class="accordion-button botao-padrao" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-One" aria-expanded="true" aria-controls="collapse-One">
+                                Lucas 10:5-6
                             </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div id="collapse-One" class="accordion-collapse collapse show" data-bs-parent="#accordion1">
                             <div class="accordion-body">
-                                5 Na casa em que entrarem, primeiramente declarem a paz sobre ela. 6 Se o residente for digno de paz, deixem-lhe a vossa paz; se não, para vocês voltará.
+                                <sup>5</sup> Na casa em que entrarem, primeiramente declarem a paz sobre ela. 
+                                <sup>6</sup> Se o residente for digno de paz, deixem-lhe a vossa paz; se não, para vocês voltará.
                             </div>
                         </div>
                     </div>
+
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button botao-padrao collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Filipenses 4:6-7
+                            <button class="accordion-button botao-padrao collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-Two" aria-expanded="false" aria-controls="collapse-Two">
+                                Filipenses 4:6-7
                             </button>
                         </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div id="collapse-Two" class="accordion-collapse collapse" data-bs-parent="#accordion1">
                             <div class="accordion-body">
-                                6 Não alimentem preocupações seja pelo que for, antes apresentem os vossos cuidados em oração e súplicas perante Deus. Exponham-lhe todas as vossas necessidades, sem esquecer de lhe expressar o vosso agradecimento. 7 Então, a paz de Deus, que ultrapassa tudo o que a mente humana pode naturalmente compreender, conservará o vosso espírito e os vossos sentimentos em Cristo Jesus.
+                                <sup>6</sup> Não alimentem preocupações seja pelo que for, antes apresentem os vossos cuidados em oração e súplicas perante Deus. Exponham-lhe todas as vossas necessidades, sem esquecer de lhe expressar o vosso agradecimento. 
+                                <sup>7</sup> Então, a paz de Deus, que ultrapassa tudo o que a mente humana pode naturalmente compreender, conservará o vosso espírito e os vossos sentimentos em Cristo Jesus.
                             </div>
                         </div>
                     </div>
+
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button botao-padrao collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            João 16:33
+                            <button class="accordion-button botao-padrao collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-Three" aria-expanded="false" aria-controls="collapse-Three">
+                                João 16:33
                             </button>
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div id="collapse-Three" class="accordion-collapse collapse" data-bs-parent="#accordion1">
                             <div class="accordion-body">
-                                33 Disse-vos tudo isto para que tenham paz. Aqui na Terra terão muitos sofrimentos. Mas tenham coragem, porque eu venci o mundo!”
+                                <sup>33</sup> Disse-vos tudo isto para que tenham paz. Aqui na Terra terão muitos sofrimentos. Mas tenham coragem, porque eu venci o mundo!”
                             </div>
                         </div>
                     </div>
+
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button botao-padrao collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapseThree">
-                            Você é filho da paz?
+                            <button class="accordion-button botao-padrao collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-Four" aria-expanded="false" aria-controls="collapse-Four">
+                                Você é filho da paz?
                             </button>
                         </h2>
-                        <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div id="collapse-Four" class="accordion-collapse collapse" data-bs-parent="#accordion1">
                             <div class="accordion-body">
                                 Se sim e você está caminhando na vida espiritual sozinho nós queremos te conhecer. Como funciona? Marcamos 3 ou 4 encontros na sua casa para desejar essa paz e compartilhar a Palavra de Deus.
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
 
         <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-2" aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasRightLabel">Buffet</h5>
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Exortação ou Acusação?</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-                <div class="accordion" id="accordionExample">
+                <div class="accordion" id="accordion2">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button botao-padrao" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                Exortação - Apocalipse 3:19
+                            </button>
+                        </h2>
+                        <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordion2">
+                            <div class="accordion-body">
+                                <sup>19</sup> Eu repreendo e castigo a todos quantos amo; sê, pois, zeloso e arrepende-te. 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button botao-padrao collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                Exortação - Romanos 6:23
+                            </button>
+                        </h2>
+                        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordion2">
+                            <div class="accordion-body">
+                                <sup>23</sup> Pois o salário do pecado é a morte, mas o dom gratuito de Deus é a vida eterna em Cristo Jesus, nosso Senhor. 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button botao-padrao collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                Acusação - Zacarias 3:1
+                            </button>
+                        </h2>
+                        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordion2">
+                            <div class="accordion-body">
+                                <sup>1</sup> Depois disso ele me mostrou o sumo sacerdote Josué diante do anjo do Senhor, e Satanás, à sua direita, para acusá-lo. 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button botao-padrao collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                Entenda essa guerra pelo nosso coração
+                            </button>
+                        </h2>
+                        <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordion2">
+                            <div class="accordion-body">
+                                O Diabo quer o controle das nossas vidas pela pratica de pecado. Pecado é toda transgressão aos Principios do Reino de Deus. Quando praticamos essas transgressões, haverá 2 caminhos: Arrependimento que nos leva a Cristo para reconciliação com Deus ou as maldições reservada para os filhos da rebeldia.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button botao-padrao collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                Galátas 5: 19-25
+                            </button>
+                        </h2>
+                        <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordion2">
+                            <div class="accordion-body">
+                                <sup>19</sup> Ora, as obras da carne são manifestas: imoralidade sexual, impureza e libertinagem; 
+                                <sup>20</sup> idolatria e feitiçaria; ódio, discórdia, ciúmes, ira, egoísmo, dissensões, facções 
+                                <sup>21</sup> e inveja; embriaguez, orgias e coisas semelhantes. Eu os advirto, como antes já os adverti: Aqueles que praticam essas coisas não herdarão o Reino de Deus. 
+                                <sup>22</sup> Mas o fruto do Espírito é amor, alegria, paz, paciência, amabilidade, bondade, fidelidade, 
+                                <sup>23</sup> mansidão e domínio próprio. Contra essas coisas não há lei. 
+                                <sup>24</sup>Os que pertencem a Cristo Jesus crucificaram a carne, com as suas paixões e os seus desejos. 
+                                <sup>25</sup> Se vivemos pelo Espírito, andemos também pelo Espírito.
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-3" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasRightLabel">Oremos: "Amigo Espirito Santo ..."</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body">
+                <div class="accordion" id="accordion3">
+
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button botao-padrao" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Eventos
+                                Romanos 8:1-2
                             </button>
                         </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Organizamos buffet com cardápios variados e personalizados para casamentos, festas de aniversário e outros eventos! 
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordion3">
+                            <div class="accordion-body">
+                                <sup>1</sup> Portanto, agora já não há condenação para os que estão em Cristo Jesus,
+                                <sup>2</sup> porque por meio de Cristo Jesus a lei do Espírito de vida me libertou da lei do pecado e da morte.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button botao-padrao collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Catering
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Oferecemos serviço de alimentação variada para coffee breaks, produções e bastidores.
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button botao-padrao collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Romanos 8:26-27
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion3">
+                            <div class="accordion-body">
+                                <sup>26</sup> Da mesma forma o Espírito nos ajuda em nossa fraqueza, pois não sabemos como orar, mas o próprio Espírito intercede por nós com gemidos inexprimíveis.
+                                <sup>27</sup> E aquele que sonda os corações conhece a intenção do Espírito, porque o Espírito intercede pelos santos de acordo com a vontade de Deus.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button botao-padrao collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Romanos 7:18-20
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion3">
+                            <div class="accordion-body">
+                                <sup>18</sup> Sei que nada de bom habita em mim, isto é, em minha carne. Porque tenho o desejo de fazer o que é bom, mas não consigo realizá-lo.
+                                <sup>19</sup> Pois o que faço não é o bem que desejo, mas o mal que não quero fazer, esse eu continuo fazendo.
+                                <sup>20</sup> Ora, se faço o que não quero, já não sou eu quem o faz, mas o pecado que habita em mim. 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button botao-padrao collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Santo, pecado como isso soa para você?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordion3">
+                            <div class="accordion-body">
+                                Santo é ser separado. Não se engane, ou o seu coração está no Reino de Deus ou nas Trevas. Quando a biblia diz sobre sermos santo, significa que estamos separados para Deus. Já o pecado, todos cometem, a diferença é que o Espirito Santo vai nos convencer para arrependimento quando escolhemos o Senhor Jesus. Porem quando não me santifico a Cristo o pecado soará em meu coração como acusação feita da parte de satanás.
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <div class="modal fade" id="send" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title fs-5" id="send-msg">Dados</h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="button-error" class="modal-footer mx-auto">
+                  <button type="button" onclick="sendClick()" class="btn btn-secondary botao-padrao border-0" data-bs-dismiss="modal"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        
     </body>
 </html>
