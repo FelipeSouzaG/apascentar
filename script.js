@@ -94,7 +94,7 @@ const handleSubmit = async (event) => {
 
 		try {
 
-			const response = await fetch('https://script.google.com/macros/s/AKfycbw4GiNyvYJBLcjzEVMbyn7ESIz2rg7xtAmK0eToQNVlsxYi_VhyejLbhLL3Vtwo5wuVfQ/exec', {
+			const response = await fetch('https://script.google.com/macros/s/AKfycbympoM1MlTXORMgpKDK4Ltjf9eoGVpMg4Rx7uaUK-z-_tOQfqMG6kO3F1i5vbsDmRQIOg/exec', {
 			    method: 'POST',
 			    headers: {
 			        'Content-Type': 'application/json',
@@ -134,4 +134,5 @@ function sendClick(){
 
 
 }
+
 
