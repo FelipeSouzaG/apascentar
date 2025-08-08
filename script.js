@@ -93,32 +93,33 @@ const handleSubmit = async (event) => {
         addLoading();
 
 		try {
-        const response = await fetch('https://script.google.com/macros/s/https://script.google.com/macros/s/AKfycbygwRPDadG8ddJZIl703VTzN51T-SouJQYZ2BuEZkYMmWRAgqF3y16MEFetR2gL5YNk-Q/exec/exec', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                nome,
-                endereco,
-                telefone,
-                sentimento,
-                visita
-            }),
-        });
 
-        if (!response.ok) {
-            throw new Error(`Erro HTTP: ${response.status}`);
-        }
+			const response = await fetch('https://script.google.com/macros/s/AKfycbw4GiNyvYJBLcjzEVMbyn7ESIz2rg7xtAmK0eToQNVlsxYi_VhyejLbhLL3Vtwo5wuVfQ/exec', {
+			    method: 'POST',
+			    headers: {
+			        'Content-Type': 'application/json',
+			    },
+			    body: JSON.stringify({
+			        nome,
+			        endereco,
+			        telefone,
+			        sentimento,
+			        visita
+			    }),
+			});
 
-        const data = await response.json();
+	        if (!response.ok) {
+	            throw new Error(`Erro HTTP: ${response.status}`);
+	        }
 
-        errorMsg('Obrigado!','sendClick()' , 'Dados enviados com sucesso!');
+	        const data = await response.json();
+	
+	        errorMsg('Obrigado!','sendClick()' , 'Dados enviados com sucesso!');
 
-    } catch (error) {
-        errorMsg('Erro!','sendClick()' , 'Falha no servidor, por favor tente novamente em alguns minutos');
-        console.error("Erro:", error);
-    }
+	    } catch (error) {
+	        errorMsg('Erro!','sendClick()' , 'Falha no servidor, por favor tente novamente em alguns minutos');
+	        console.error("Erro:", error);
+	    }
 
         removeLoading();
 
@@ -133,3 +134,4 @@ function sendClick(){
 
 
 }
+
